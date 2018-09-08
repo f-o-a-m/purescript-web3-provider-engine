@@ -39,7 +39,7 @@ instance infuraSubproviderWeb3Subprovider       :: Web3Subprovider InfuraSubprov
 foreign import newCacheSubprovider        :: forall eff. Eff eff CacheSubprovider
 foreign import newFixtureSubprovider      :: forall eff. FixtureSubproviderOptions -> Eff eff FixtureSubprovider
 foreign import newFilterSubprovider       :: forall eff. Eff eff FilterSubprovider
-foreign import newVmSubprovider           :: forall eff. VmSubproviderOptions -> Eff eff VmSubprovider
+-- foreign import newVmSubprovider           :: forall eff. VmSubproviderOptions -> Eff eff VmSubprovider
 foreign import newHookedWalletSubprovider :: forall eff. HookedWalletSubproviderOptions -> Eff eff HookedWalletSubprovider
 foreign import newNonceTrackerSubprovider :: forall eff. Eff eff NonceTrackerSubprovider
 foreign import newRpcSubprovider          :: forall eff. String -> Eff eff RpcSubprovider

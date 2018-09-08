@@ -2,7 +2,7 @@
 const CacheSubprovider = require('web3-provider-engine/subproviders/cache.js');
 const FixtureSubprovider = require('web3-provider-engine/subproviders/fixture.js');
 const FilterSubprovider = require('web3-provider-engine/subproviders/filters.js');
-const VmSubprovider = require('web3-provider-engine/subproviders/vm.js');
+// const VmSubprovider = require('web3-provider-engine/subproviders/vm.js');
 const HookedWalletSubprovider = require('web3-provider-engine/subproviders/hooked-wallet.js');
 const NonceTrackerSubprovider = require('web3-provider-engine/subproviders/nonce-tracker.js');
 const RpcSubprovider = require('web3-provider-engine/subproviders/rpc.js');
@@ -23,11 +23,11 @@ exports.newFilterSubprovider = function() {
   return new FilterSubprovider();
 }
 
-exports.newVmSubprovider = function(opts) {
-  return function() {
-    return new VmSubprovider(opts);
-  }
-}
+// exports.newVmSubprovider = function(opts) {
+//   return function() {
+//     return new VmSubprovider(opts);
+//   }
+// }
 
 exports.newHookedWalletSubprovider = function(opts) {
   return function() {
