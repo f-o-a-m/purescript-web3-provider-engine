@@ -1,14 +1,16 @@
 "use strict";
-const ProviderEngine = require('web3-provider-engine')
+const ProviderEngine = require('web3-provider-engine');
 
 exports.newProviderEngine = function () {
   return new ProviderEngine();
 }
 
-exports.addSubprovider = function(engine) {
-  return function(subprovider) {
-    return function() {
-      return engine.addProvider(subprovider);
+exports.addSubprovider = function(_web3subprovider_dictionary) {
+  return function(engine) {
+    return function(subprovider) {
+      return function() {
+        return engine.addProvider(subprovider);
+      }
     }
   }
 }
