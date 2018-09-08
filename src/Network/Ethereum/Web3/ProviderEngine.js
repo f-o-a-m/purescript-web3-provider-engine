@@ -1,7 +1,5 @@
 "use strict";
 
-exports.engineToProvider = function (engine) { return engine; }
-
 exports.addSubprovider = function(engine) {
   return function(subprovider) {
     return function() {
@@ -13,7 +11,8 @@ exports.addSubprovider = function(engine) {
 exports.startEngine = function(engine) {
   return function(callback) {
     return function() {
-      return engine.start(callback);
+      engine.start(callback);
+      return engine;
     }
   }
 }
