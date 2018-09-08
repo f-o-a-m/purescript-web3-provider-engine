@@ -1,4 +1,9 @@
 "use strict";
+const ProviderEngine = require('web3-provider-engine')
+
+exports.newProviderEngine = function () {
+  return new ProviderEngine();
+}
 
 exports.addSubprovider = function(engine) {
   return function(subprovider) {
