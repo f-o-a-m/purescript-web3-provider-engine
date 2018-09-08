@@ -1,0 +1,22 @@
+{
+  "name": "purescript-web3-provider-engine",
+  "description": "purescript-web3 compatible bindings to web3-provider-engine",
+  "main": "",
+  "authors": [
+    "Ilya Ostrovskiy <iostat@users.noreply.github.com>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/f-o-a-m/purescript-web3-provider-engine",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/f-o-a-m/purescript-web3-provider-engine.git"
+  },
+  "ignore": [
+    "*",
+    "!src/**/*"
+  ],
+  "dependencies": {
+    "purescript-web3": "^0.25.1"
+  },
+  "devDependencies": {}
+}
