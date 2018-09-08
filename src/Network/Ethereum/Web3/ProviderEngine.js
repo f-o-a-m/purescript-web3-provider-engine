@@ -8,7 +8,7 @@ exports.newProviderEngine = function () {
 exports.addSubprovider = function(engine) {
   return function(subprovider) {
     return function() {
-      return engine.addSubprovider(subprovider);
+      return engine.addProvider(subprovider);
     }
   }
 }
